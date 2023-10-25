@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+}
+
+.title-bar {
+    height: 5vh;
+    background-color: #107c41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.menu-bar {
+    height: 5vh;
+    background-color: #107c41;
+    display: flex;
+}
+
+.menu-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.menu-item:hover {
+    background-color: #0c5e31;
+    cursor: pointer;
+}
+
+.menu-item--selected {
+    background-color: #fff;
+    color: #107c41;
+    cursor: pointer;
+}
+
+.menu-item--selected:hover {
+    background-color: #fff;
+    cursor: default;
+}
+
+.menu-icon-bar {
+    height: 6vh;
+    display: flex;
+    background-color: rgb(233, 231, 231);
+    align-items: center;
+
+}
+
+.menu-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.selector {
+    height: 80%;
+    font-size: 1rem;
+}
+
+.font-family-selector {
+    width: 20%;
+}
+
+.formula-bar {
+    height: 5vh;
+}
+
+.data-container {
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.select-all {
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+}
+
+.column-name-container {
+    width: calc(100vw - 30px);
+    height: 30px;
+    border: 1px solid red;
+}
+
+.row-name-container {
+    width: 30px;
+    height: calc(75vh - 30px);
+    border: 1px solid red;
+}
+
+.input-cell-container {
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border: 1px solid red;
+}
+
+.sheet-bar {
+    height: 4vh;
+    display: flex;
+    align-items: center;
+}
+
+.scroller {
+    display: flex;
+}
+
+.icon-left-scroll, .icon-right-scroll {
+    font-size: 30px;
+}
+
+.icon-add-circle {
+    color:#107c41;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.icon-add-circle:hover {
+    transform: scale(1.1);
+}
+
+.sheet-tab {
+    border: 1px solid black;
+    border-bottom: 4px solid #107c41;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
